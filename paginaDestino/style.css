@@ -197,6 +197,7 @@ img {
 .section-card .card .card-content {
     position: relative;
     margin: 30px;
+    
 
 }
 
@@ -271,7 +272,32 @@ span {
 }
 
 
-/* ! RESPONSIVE  */
+/* !MEDIA QUERIES  */
+
+@media screen and (max-width:1000px) and (min-width:901px){
+    .section-card{
+        width: 100%;
+        height: fit-content;
+    }
+
+        img{ 
+            width: 200px;
+            height: 200px;
+            margin: 3px 2px 0 2px;
+        }
+
+    .section-card .card{
+        height: 450px;
+        width: 290px;
+        margin-top: 5px;
+        filter: none;
+    }
+}
+
+
+
+
+
 
 @media screen and (max-width: 900px) {
 
@@ -288,11 +314,13 @@ span {
     }
 
 
-    p.p-welcome {
+    .p-welcome {
         font-size: 1.4rem;
     }
 
-
+    .btn{
+        left: 44%;
+    }
 
 
     /* !FIRST SECTION */
@@ -345,4 +373,21 @@ span {
 
 
 
+}
+
+@media screen and  (max-width:428px) {
+
+    #showcase{
+        width: 100%;
+    }
+
+    #showcase .bg-welcome{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .btn{
+        left: 35.9%;
+        margin-top: -20px;
+    }
 }
