@@ -96,9 +96,13 @@ h1 {
     box-shadow: 4px 2px var(--palet-color);
     transition: all 400ms;
     border: 1.5px solid #fff;
-
 }
 
+.btn:focus{
+    background-color: var(--palet-color);
+    border: none;
+    box-shadow: none;
+}
 
 
 
@@ -272,9 +276,12 @@ span {
 }
 
 
+
 /* !MEDIA QUERIES  */
 
-@media screen and (max-width:1000px) and (min-width:901px){
+
+
+@media screen and (max-width:1040px) and (min-width:901px){
     .section-card{
         width: 100%;
         height: fit-content;
@@ -372,10 +379,11 @@ span {
     }
 
 
+    
 
 }
 
-@media screen and  (max-width:428px) {
+@media screen and  (max-width:550px) {
 
     #showcase{
         width: 100%;
@@ -389,5 +397,12 @@ span {
     .btn{
         left: 35.9%;
         margin-top: -20px;
+    }
+
+    .contact .contact-3{
+        background-color: var(--palet-color);
+        margin-right: 4px;
+        padding: 4px;
+        border-radius: 7px;
     }
 }
