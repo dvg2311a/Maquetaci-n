@@ -93,7 +93,6 @@ h1 {
 
 .btn:hover {
     background-color: #0b365764;
-    box-shadow: 4px 2px var(--palet-color);
     transition: all 400ms;
     border: 1.5px solid #fff;
 }
@@ -270,7 +269,7 @@ span {
 
 .contact-3:hover {
     background-color: #0b3657;
-    padding: 4px;
+    padding: 7px;
     border-radius: 4px;
     transition: all 350ms;
 }
