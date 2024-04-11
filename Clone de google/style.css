@@ -10,7 +10,7 @@ html{
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-image: url(./fondo.png);
+    background-image: url(./assets/fondo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@ main .section-1{
     margin: 10px 0;
     width: 280px;
     height: 100px;
-    background-image: url(./google-939112.png);
+    background-image: url(./assets/google-939112.png);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -90,42 +90,43 @@ form{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
-    
 }
+
+form .content-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 545px;
+    background-color: #ffff;
+    border-radius: 600px;
+}
+
 
 form #search{
     font-size: 1.6rem;
     height: 48px;
-    width: 50%;
+    width: 430px;
     border-radius: 600px;
     background-color: #ffff;
     list-style: none;
     border: none;
+    outline: none;
+    padding-left: -20px;
 }
 
-#search:hover{
+.content-input:hover{
     border: none;
+    box-shadow: 0 1px 6px 0 #20212447;
 }
 
-input::placeholder {
-    padding-left: 70px;
-    border: none;
-}
-
-input[type="search"]{
-    display: block;
-    margin-top: 1px;
-    border: noen;
-}
 
 
 form img{
     position:relative;
     width: 20px;
     height: 20px;
-    float: center;
-    left: 50px;
+    left: 40px;
     
 }
 
@@ -135,6 +136,7 @@ form .icons-m, .icons-l{
     margin: 9px;
     width: 17px;
     height: 22px;
+    cursor: pointer;
 }
 
 form .icons-l{
