@@ -129,6 +129,8 @@ html {
     transition: all 500ms;
 }
 
+
+
 /* !CONTENIDO DE BIENVENIDA */
 .content-welcome {
     margin-top: 3px;
@@ -374,7 +376,22 @@ img {
     #welcome nav .menu-responsive{
         display: block;
         position: absolute;
-        
+        border: 1px solid red;
+        width: 90px;
     }
 
+    #welcome .content-welcome{
+        width: 100%;
+    }
+
+    #welcome .content-welcome .btn{
+        width: 180px;
+       left:-64px;
+    }
+
+   
+   .footer .footer-cont, .footer-cont2{
+    width: 190px;
+    font-size: 1rem;
+   }
 }
