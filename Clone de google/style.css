@@ -52,13 +52,6 @@ nav .menu .submenu img{
     border-radius: 10%;
 }
 
-nav .menu img:hover{
-    background-color: #ffff;
-    padding: 5px;
-    border-radius: 5px;
-    opacity: 0.5;
-}
-
 .submenu a{
     text-decoration: none;
     color: #2c2727;
@@ -118,6 +111,7 @@ form #search{
 .content-input:hover{
     border: none;
     box-shadow: 0 1px 6px 0 #20212447;
+    transform: scale(1.9) translate3d(0,0,0,0)
 }
 
 
@@ -143,3 +137,47 @@ form .icons-l{
     width: 20px;
     height: 23px;
 }
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    /* "fr" es Fracción */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #fffde9;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer  .footer-left{
+    justify-self: left;
+}
+
+footer .footer-right{
+    justify-self: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+    text-decoration: none;
+}
+
+footer ul li a:hover{
+    background-color: #ffff;
+    padding: 3px;
+    border-radius: 10px;
+    color: #2c2727;
+    transition: all 400ms;
+}
+
