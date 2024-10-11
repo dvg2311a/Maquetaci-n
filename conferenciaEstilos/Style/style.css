@@ -36,11 +36,9 @@ html {
     list-style: none;
     padding-top: 7px;
     margin-right: 10px;
-
 }
 
 .menu .submenu {
-
     position: relative;
     font-family: var(--font-prin);
     font-size: 1.4rem;
@@ -48,16 +46,20 @@ html {
     padding: 5px;
     margin-right: 10px;
     text-decoration: none;
+    transition: all .3s;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .menu .submenu:hover {
     background: var(--title);
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: var(--bg-color);
-    border: solid 1px var(--title);
     border-radius: 4px;
     transition: all 400ms;
+    transform: scale(1.8);
+    
 }
 
 
@@ -79,7 +81,7 @@ html {
     border-radius: 4px;
     display: flex;
     justify-content: space-around;
-    transform: rotate(90deg);
+    transform: rotate(90deg); 
 }
 
 .menu-responsive:hover > .content-nav-responsive{
@@ -134,7 +136,6 @@ html {
 /* !CONTENIDO DE BIENVENIDA */
 .content-welcome {
     margin-top: 3px;
-
 }
 
 .content-welcome h1 {
@@ -175,9 +176,7 @@ html {
     font-weight: bold;
     text-decoration: none;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 40px;
-    margin-left: 41.9%;
+    margin: 25px 0 40px 41.9%;
     padding: 5px;
     padding-top: 21.9px;
     font-size: 2rem;
@@ -186,6 +185,7 @@ html {
     color: var(--title);
     border: var(--title) 1px solid;
     border-radius: 9px;
+    transition: all .3s;
 }
 
 .content-welcome .btn:hover {
@@ -217,11 +217,11 @@ html {
 /* *CARDS */
 .section-card .cards {
     width: 300px;
-    /* border: #5e807b 1px solid; */
     height: 370px;
     padding: 35px;
     margin-bottom: 8%;
-
+    transition: all .2s;
+    border-radius: 13px;
 }
 
 .section-card .cards:hover {
@@ -231,6 +231,10 @@ html {
     transform: scale(1.11) translate3d(0, 0, 0);
     transition: all 400ms;
     color: var(--title);
+
+    & .content-cards h3{
+        color: var(--title);
+    }
 
 }
 
@@ -376,7 +380,6 @@ img {
     #welcome nav .menu-responsive{
         display: block;
         position: absolute;
-        border: 1px solid red;
         width: 90px;
     }
 
