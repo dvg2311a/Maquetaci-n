@@ -1,0 +1,60 @@
+.background {
+  background: #141433;
+}
+
+.previewContainer {
+  background: #b5b5e3;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+
+}
+
+.album {
+  width: 200px;
+  view-transition-name: album;
+  z-index: 100000;
+}
+/* Se declara esta propiedad para activar la transición entre las páginas
+    Las páginas comparten el mismo CSS
+*/
+@view-transition {
+  navigation: auto; /* Eneable*/
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 0.5s;
+}
+
+::view-transition-old(root) {
+  animation-name: scaleOut;
+}
+
+::view-transition-new(root) {
+  animation-name: scaleIn;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+.textos, .previewContainer{
+    view-transition-name: textos;
+    /* animation-name: album; */
+}
